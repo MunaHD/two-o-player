@@ -2,14 +2,20 @@ require './game'
 require './player'
 require './question'
 
-
-player1 = Player.new("Player 1")
-player2 = Player.new("Player 2")
+# print once
+puts 
+puts "     LET THE GAME BEGIN!    "
+puts 
+puts "Enter a name for Player 1: "
+player1 = Player.new(gets.chomp.to_s)
+puts "Enter a name for Player 2: "
+player2 = Player.new(gets.chomp.to_s)
 player_turn = player1
 
 game = Game.new(player1, player2)
-# print once
-puts "Let the game begin!"
+
+
+
 loop do
   # generate a new question with random numbers
   # and display on screen
@@ -21,7 +27,7 @@ loop do
     puts "Yup! That's right!"
   else
     player_turn.lose_a_life
-    puts "Nope! better luck next time"
+    puts "Nope! That's wrong."
   end
   
   # show the scoreboard
