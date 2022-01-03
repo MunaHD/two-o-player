@@ -1,6 +1,6 @@
 class Question
  
-  attr_accessor :check_answer
+  attr_accessor :check_answer, :new_question
   def initialize()
     @num1 = rand(1..20)
     @num2 = rand(1..20)
