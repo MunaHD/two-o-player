@@ -9,7 +9,7 @@ M: a method to reduce life is answer is wrong
 QUESTION
 V: have two variables to hold the two numbers we want to add
 
-M: a method to generate those randome numbers and make a question
+M: a method to generate those random numbers and make a question
 M: a method to give the answer to that question (to use to see if the player was right. maybe a boolean?)
 
 GAME
