@@ -25,12 +25,13 @@ MAIN FILE
 where tha game play takes place:
 
 players should take turn playing tha game(turn ends after the question is answered)
--for each player: we give a question-> get their answer-> check the answer-> take/leave life-> tell them respone-> give a score tally-> print NEW TURN
+
+-for each player: we give a question-> get their answer-> check the answer-> take/leave life-> tell them respone-> give a score tally-> print NEW TURN or END GAME
 
 check players answer to the answer- (return boolean)
 -> if wrong, deduct life and return response ( you're wrong)
 -> if right, return response (you're right)
-print out tally of scores and NEW TURN on a new line ( p? puts?)
 
--> before printing a response( check if a player has a score of 0)
+-> before starting a new round( check if a player has a score of 0)
 if so then say the other player won and thier score, GAME OVER, good bye.
+else print out tally of scores and NEW TURN on a new line
