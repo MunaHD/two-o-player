@@ -25,17 +25,19 @@ loop do
   end
   
   # show the scoreboard
-  
-  if player1.lives < 1 || player2.lives < 1
-   puts "#{player1.name} wins with a score of #{player1.lives}/3"  
+  if player1.lives < 1
+   puts "#{player2.name} wins with a score of #{player2.lives}/3"  
+   break
+  elsif player2.lives < 1
+    puts "#{player1.name} wins with a score of #{player1.lives}/3"  
    break
   else 
     game.score_tally
     puts "-----NEW TURN-----"
     player_turn = player_turn == player1 ? player2 : player1
   end
-  
-
 end
+puts "-----GAME OVER-----"
+puts "Good bye!"
 
 
